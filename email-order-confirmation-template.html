@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order confirmation</title>
+  </head>
+  <body>
+    <div style="background-color:#f4f4f4; font-size:14px; padding:20px; font-family:'Helvetica Neue', Arial, sans-serif;">
+      <table style="max-width:600px; margin:auto; border-spacing:0; border-collapse:collapse; background:white; border-radius:10px; overflow:hidden;">
+        <thead>
+          <tr style="background-color:#5cb85c; color:white; text-align:center;">
+            <th style="padding:20px;">
+              <h1 style="margin:0; font-size:24px;">Order confirmation</h1>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:20px; color:#666;">
+              <p style="font-size:16px; margin:0;">Thanks for your order! Here is your order confirmation with the details below.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;">
+              <table style="width:100%; border-spacing:0;">
+                <tbody>
+                  <tr>
+                    <td style="padding:10px 0; font-size:14px; color:#333;">
+                      <strong>Exhibitor:</strong> My Company
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:10px 0; font-size:14px; color:#333;">
+                      <strong>E-mail:</strong>
+                      <a rel="noopener noreferrer" href="mailto:myemail@mycompany.com" style="color:#5cb85c; text-decoration:none;">myemail@mycompany.com</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:10px 0; font-size:14px; color:#333;">
+                      <strong>Receiver:</strong> {SalesOrder.accountName}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:10px 0; font-size:14px; color:#333;">
+                      <strong>Order number:</strong> {SalesOrder.name}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:10px 0; font-size:14px; color:#333;">
+                      <strong>Date of order:</strong> {SalesOrder.dateOrdered}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:10px 0; font-size:14px; color:#333;">
+                      <strong>Delivery date:</strong> {SalesOrder.dueDate}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:10px 0; font-size:14px; color:#333;">
+                      <strong>Amount (EUR):</strong> {SalesOrder.grandTotalAmount}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px; text-align:center; color:#929292; font-size:12px;">Please contact us if you have any questions regarding this order.</td>
+          </tr>
+          <tr>
+            <td style="padding:20px; text-align:center; color:#929292; font-size:12px;">This order confirmation was delivered by My Company</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
